@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In - University Job Portal</title>
+    <link rel="stylesheet" href="style1.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #ff8c00, #0057b8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .signin-container {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+        .signin-container h2 {
+            color: #ff8c00;
+            margin-bottom: 1rem;
+        }
+        .signin-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .signin-button {
+            background: #0057b8;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+        .signin-button:hover {
+            background: #ff8c00;
+        }
+        .signup-link {
+            margin-top: 10px;
+            display: block;
+            color: #0057b8;
+            text-decoration: none;
+        }
+        .signup-link:hover {
+            color: #ff8c00;
+        }
+    </style>
+</head>
+<body>
+    <div class="signin-container">
+        <h2>Log In</h2>
+        <form>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit" class="signin-button">Sign In</button>
+        </form>
+
+        <a href="#" class="signup-link">Forget Password</a>
+        <a href="#" class="signup-link">Still having trouble loging in? Write us an email</a>
+</body>
+</html>

@@ -1,0 +1,448 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<title>University Job Portal Website</title>
+<!--swiper-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    <!--navbar-->
+    <nav class="navbar">
+        <h2 class="navbar-logo"><a href="#">IIST IIP IIMR</a></h2>
+        <div class="navbar-menu">
+            <a href="#jobs">Jobs</a>
+            <a href="#companies">Companies</a>
+            <a href="#testimonials">Testimonals</a>
+            <a href="#blog">Blogs</a>
+            <a href="login.html">Sign In</a>
+
+        </div>
+        <div class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+    <!--HEADER-->
+    <h1 class="header-title">
+        FIND YOUR <BR> <SPAN> PERFECT JOB</SPAN> HERE 
+    </h1>
+    <img src="iist.jpg" alt="Image of IIST" height="600" width="1520">
+    
+    <!--search-->
+    <div class ="search-wrapper">
+        <div class = "search-box">
+
+            <div class = "search-card">
+                <input class = "serach-input" type="text" id="searchInput" placeholder="Job title or keywords" onkeyup="searchFunction()">
+                <button class = "search-button">Search</button>
+    
+            </div>
+        </div>
+    </div>
+
+
+    <!--new changes
+    <div class="search-wrapper">
+        <label for="search">Search</label>
+        <input type="search" id="search">
+    </div>
+    <div class="user-cards">
+        <div class="card">
+            <div class="header">Serach Jobs</div>
+                <div class="body">Data Analyst</div>
+        </div>
+    </div>-->
+
+    <!--filter box-->
+    <div class = "filter-box">
+        <div class = "filter-dropdown">
+            <select class ="filter-select" id="job-level" name="job-level">
+                <option>Job Level</option>
+                <option>Entry</option>
+                <option>Mid-Senior</option>
+                <option>Director</option>
+            </select>
+            <select class = "filter-select" id="job-function" name="job-function">
+                <option>Job Function</option>
+                <option>IT</option>
+                <option>Managemnet</option>
+                <option>Education</option>
+            </select>
+            <select class = "filter-select" id="employment" name = "employment">
+                <option>Employment</option>
+                <option>Internship</option>
+                <option>Part Time</option>
+                <option>Full Time</option>
+            </select>
+            <select class = "filter-select" id="loaction" name="loaction">
+                <option>Locations</option>
+                <option>Remote</option>
+                <option>Hybrid</option>
+                <option>Indore</option>
+                <option>Banglore</option>
+                <option>Pune</option>
+            </select>
+            <select class ="filter-select" id="education" name="education">
+                <option>Education</option>
+                <option>Engineer</option>
+                <option>Pharmacist</option>
+                <option>Management</option>
+            </select>
+        </div>
+    </div>
+
+    <!--job search-->
+    <section class="job-list" id="jobs">
+        <div class="job-card">
+            <div class="job-name">
+                <img class = "job-profile" src="google1.avif">
+                <div class="job-detail">
+                    <h4>Google</h4>
+                    <h3>Software Developer Engineer</h3>
+                    <p>Design, develop, and optimize scalable software solutions for Google’s products and services.</p>
+                </div>
+            </div>
+            <div class="job-label">
+                <a class="label-a" href="#">Java</a>
+                <a class="label-b" href="#">C++</a>
+                <a class="label-c" href="#">SQL</a>
+            </div>
+            <div class="job-posted">
+                Posted 2 mins ago
+            </div>
+        </div>
+
+
+    <div class="job-card">
+        <div class="job-name">
+            <img class = "job-profile" src="facebook.avif">
+            <div class="job-detail">
+                <h4>Facebook</h4>
+                <h3>Data Analyst</h3>
+                <p>Analyze data, generate insights, and optimize decision-making for Facebook’s products and business strategies.</p>
+            </div>
+        </div>
+        <div class="job-label">
+            <a class="label-a" href="#">Python/R</a>
+            <a class="label-b" href="#">Problem-solving</a>
+            <a class="label-c" href="#">SQL</a>
+        </div>
+        <div class="job-posted">
+            Posted 40 mins ago
+        </div>
+    </div>
+
+    <div class="job-card">
+        <div class="job-name">
+            <img class = "job-profile" src="EBay-Logo.wine.svg">
+            <div class="job-detail">
+                <h4>eBay</h4>
+                <h3>Business Development</h3>
+                <p>Identify growth opportunities, build partnerships, and drive strategic initiatives to expand eBay’s market reach.</p>
+            </div>
+        </div>
+        <div class="job-label">
+            <a class="label-a" href="#">Analytical abilities</a>
+            <a class="label-b" href="#">Problem-solving</a>
+            <a class="label-c" href="#">SQL Begineer Level</a>
+        </div>
+        <div class="job-posted">
+            Posted 2 hours ago
+        </div>
+    </div>
+    <button class ="job-more">More List</button>
+</section>
+
+
+<!--join-->
+<section class ="join">
+    <!--<img class = "join-img" src="jobs.avif">-->
+    <div class ="join-detail">
+        <h1 class="section-title">LETS START YOUR NEW JOB WITH US</h1>
+        <p>Hello, We are as excited as you are for endless opportunities waiting for you!!!</p>
+    </div>
+    <a href="login.html">
+        <button class="join-button">Join Now</button>
+    </a>
+</section>
+
+<!--featured company-->
+<section class="featured" id="companies">
+    <h1 class="section-title">Featured</h1>
+    <p>These are some of the companies that are featured on our campus. Following companies provided with 100+ offers to students of our institute.</p>
+    <div class="featured-wrapper">
+        <div class ="featured-card">
+            <img class="featured-image" src="facebook.avif">
+            <p>Facebook</p>
+            <button class="featured-button">View 2 jobs</button>
+        </div>
+
+        <div class ="featured-card">
+            <img class="featured-image" src="facebook.avif">
+            <p>Facebook</p>
+        <button class="featured-button">View 2 jobs</button>
+        </div>
+
+        <div class ="featured-card">
+            <img class="featured-image" src="facebook.avif">
+            <p>Facebook</p>
+            <button class="featured-button">View 2 jobs</button>
+        </div>
+</div>
+</section>
+<!--testimonial-->
+<section class="testimonials" id="testimonials">
+    <h1 class="section-title">Testimonial</h1>
+    <p>Lets See What Our Students Have To Say...</p>
+    
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <i class="fas fa-quote-left"></i>
+                <h3>"What makes IIST special is its commitment to student growth and innovation. The diverse community and engaging coursework pushed me to think critically and creatively. Beyond academics, I found lifelong friendships and mentors who supported me every step of the way. Thanks to this institution, I stepped into the real world feeling prepared and inspired to make a difference." </h3>
+                <div class="testimonial-pic">
+                    <img src="testi1.jpg">
+                    <p>Student 1</p>     <!--HAVE TO FIX THIS THE NAME ISNT SHOWING PLUS THE PHOTOS ARED IN CIRCLE INSTEAD OF BLOCKS-->
+                    <span>Software Developer</span>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <i class="fas fa-quote-left"></i>
+                <h3>"My time at IIST was truly transformative. The professors were not only knowledgeable but also genuinely invested in my success. The hands-on learning experiences and supportive campus environment helped me develop both professionally and personally. I graduated feeling confident in my abilities, and I owe much of my career success to the strong foundation I built here."</h3>
+                <div class="testimonial-pic">
+                    <img src="testi4.jpg">
+                    <p>Student 2</p>
+                    <span>Software Developer</span>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <i class="fas fa-quote-left"></i>
+                <h3>"Attending IIMR was one of the best decisions I ever made. The curriculum was challenging yet rewarding, and the connections I made with peers and faculty have been invaluable. The university provided me with countless opportunities, from internships to networking events, which helped me secure a job even before graduation. I will always be grateful for my time here!"</h3>
+                <div class="testimonial-pic">
+                    <img src="testi3.jpg">
+                    <p>Student 3</p>
+                    <span>Business Developer</span>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <i class="fas fa-quote-left"></i>
+                <h3>"Attending IIMR was one of the best decisions I ever made. The curriculum was challenging yet rewarding, and the connections I made with peers and faculty have been invaluable. The university provided me with countless opportunities, from internships to networking events, which helped me secure a job even before graduation. I will always be grateful for my time here!"</h3>
+                <div class="testimonial-pic">
+                    <img src="testi3.jpg">
+                    <p>Student 4</p>
+                    <span>Business Developer</span>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <i class="fas fa-quote-left"></i>
+                <h3>"Attending IIMR was one of the best decisions I ever made. The curriculum was challenging yet rewarding, and the connections I made with peers and faculty have been invaluable. The university provided me with countless opportunities, from internships to networking events, which helped me secure a job even before graduation. I will always be grateful for my time here!"</h3>
+                <div class="testimonial-pic">
+                    <img src="testi3.jpg">
+                    <p>Student 5</p>
+                    <span>Business Developer</span>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <i class="fas fa-quote-left"></i>
+                <h3>"Attending IIMR was one of the best decisions I ever made. The curriculum was challenging yet rewarding, and the connections I made with peers and faculty have been invaluable. The university provided me with countless opportunities, from internships to networking events, which helped me secure a job even before graduation. I will always be grateful for my time here!"</h3>
+                <div class="testimonial-pic">
+                    <img src="testi3.jpg">
+                    <p>Student 6</p>
+                    <span>Business Developer</span>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <i class="fas fa-quote-left"></i>
+                <h3>"Attending IIMR was one of the best decisions I ever made. The curriculum was challenging yet rewarding, and the connections I made with peers and faculty have been invaluable. The university provided me with countless opportunities, from internships to networking events, which helped me secure a job even before graduation. I will always be grateful for my time here!"</h3>
+                <div class="testimonial-pic">
+                    <img src="testi3.jpg">
+                    <p>Student 7</p>
+                    <span>Business Developer</span>
+                </div>
+            </div>
+
+            
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+
+<!--blog-->
+<section class="blog" id="blog">
+    <h1 class="section-title">Career Advices</h1>
+    <p>Learn more company tips from company's recruiter </p>
+    <div class="blog-wrapper">
+        <div class="blog-card">
+            <img class="blog-image" src="blog1.webp">
+            <div class="blog-detail">
+                <span>11 April 2025</span>
+                <h4>How to enjoy your work</h4>
+                <p>Enjoying work in an IT company means embracing learning, teamwork, and balance. Stay curious, communicate well, and align goals with company growth. Celebrate small wins and keep a positive mindset.</p>
+                <hr class="divider">
+                <a href="#" class="blog-more"></a>
+            </div>
+        </div>
+
+        <div class="blog-card">
+            <img class="blog-image" src="blog2.avif">
+            <div class="blog-detail">
+                <span>15 April 2025</span>
+                <h4>10 Tips for techincal interview :</h4>
+                <p><b>Understand the job – </b> Know the role and required skills.<br>
+                    <b>Practice coding –</b> Focus on algorithms and data structures.<br>
+                    <b>Explain clearly – </b>Communicate your thought process.<br>
+                    <b>Ask questions –</b> Clarify before coding.<br>
+                    <b>Review system design –</b> Understand architecture if needed.<br>
+                    <details>
+                    <summary>Read More</summary>
+                    <b>Showcase projects –</b>Highlight real-world experience.<br>
+                    <b>Be honest –</b> Admit gaps, show willingness to learn.<br>
+                    <b>Refine soft skills –</b> Teamwork and adaptability matter.<br>
+                    <b>Research the company – </b>Know their tech stack and culture.<br>
+                    <b>Stay confident –</b> Stay calm and tackle challenges.</p></details>
+                <hr class="divider">
+                <a href="#" class="blog-more"></a>
+            </div>
+        </div>
+
+        <div class="blog-card">
+            <img class="blog-image" src="blog3.jpeg">
+            <div class="blog-detail">
+                <span>30 April 2025</span>
+                <h4>How to manage time effectively</h4>
+                <p>As a recruiter, We value candidates who manage time effectively. Prioritize tasks based on urgency and importance, set clear goals, and break work into manageable chunks. Use tools like calendars and to-do lists to stay organized. Avoid multitasking, as it reduces efficiency. Take short breaks to maintain focus and energy. Most importantly, plan ahead and stay adaptable to unexpected changes.</p>
+                <hr class="divider">
+                <a href="#" class="blog-more"></a>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!--footer-->
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>© 2025 IIST IIP IIMR | Placement Cell</h3>
+            <p>Empowering students with career opportunities.</p>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>Email: placement@iist.edu</p>
+            <p>Phone: +91-XXXXXXXXXX</p>
+            <p>Office: Room 101, Admin Block</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Companies</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">FAQs</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <a href="#">LinkedIn</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
+        </div>
+    </div>
+</footer>
+
+<style>
+.footer {
+    background: #222;
+    color: #fff;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.footer-section {
+    margin: 1rem;
+    min-width: 200px;
+}
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-section a {
+    color: #bbb;  
+    text-decoration: none;
+}
+.footer-section a:hover {
+    color: #fff;
+}
+</style>
+
+<!-- swiper functionality -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 20,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            speed: 800,
+            slidesPerGroup: 3,
+        });
+    });
+</script>
+
+
+<!--search functionality-->
+<script>
+    // JavaScript code here
+    function searchFunction() {
+        const searchInput = document.getElementById("searchInput").value.toLowerCase();
+        const jobCards = document.querySelectorAll(".job-card");
+
+        jobCards.forEach((card) => {
+            const jobTitle = card.querySelector("h3").textContent.toLowerCase();
+            const jobDescription = card.querySelector("p").textContent.toLowerCase();
+
+            if (jobTitle.includes(searchInput) || jobDescription.includes(searchInput)) {
+                card.style.display = "block";
+            } else {
+                card.style.display = "none";
+            }
+        });
+    }
+
+    document.querySelector(".search-button").addEventListener("click", searchFunction);
+</script>
+
+</body>
+</html>

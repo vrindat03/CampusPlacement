@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply for Job</title>
+    <link rel="stylesheet" href="apply.css">
+</head>
+<body>
+    <div class="apply-form">
+        <h2>Apply for Job</h2>
+        <form id="application-form">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="resume">Upload Resume</label>
+                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+            </div>
+            <div class="form-group">
+                <label for="linkedin">LinkedIn Profile Link</label>
+                <input type="url" id="linkedin" name="linkedin" required>
+            </div>
+            <button type="submit">Submit Application</button>
+        </form>
+    </div>
+
+    <script>
+        // Get the job ID from the URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const jobId = urlParams.get('jobId');
+
+        // Handle form submission
+        document.getElementById('application-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            // Save the job ID to local storage
+            const appliedJobs = JSON.parse(localStorage.getItem('appliedJobs')) || [];
+            if (!appliedJobs.includes(jobId)) {
+                appliedJobs.push(jobId);
+                localStorage.setItem('appliedJobs', JSON.stringify(appliedJobs));
+            }
+
+            alert('Application submitted successfully!');
+            window.location.href = 'index.html'; // Redirect to the job listings page
+        });
+    </script>
+</body>
+</html>

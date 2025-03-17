@@ -5,6 +5,13 @@
     --greyColor:#f6f8fa;
     --yellowColor:rgb(248, 248, 9);
 }
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -524,4 +531,16 @@ padding: 10px 0;
 
 .swiper-slide h3 {
     font-family: 'Noto Serif', serif;
+}
+
+.last-date {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #d9534f; /* Red color for emphasis */
+    font-weight: bold; /* Make the text bold */
+    background-color: #f8d7da; /* Light red background */
+    padding: 6px 10px; /* Add some padding */
+    border-radius: 4px; /* Rounded corners */
+    border: 1px solid #f5c6cb; /* Border color */
+    display: inline-block; /* Make it fit the content */
 }

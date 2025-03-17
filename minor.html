@@ -19,7 +19,7 @@
             <a href="#companies">Companies</a>
             <a href="#testimonials">Testimonals</a>
             <a href="#blog">Blogs</a>
-            <a href="login.html">Sign In</a>
+            <a href="login.html">Log In</a>
 
         </div>
         <div class="menu-toggle">
@@ -32,7 +32,7 @@
     <h1 class="header-title">
         FIND YOUR <BR> <SPAN> PERFECT JOB</SPAN> HERE 
     </h1>
-    <img src="iist.jpg" alt="Image of IIST" height="600" width="1520">
+    <img src="images/iist.jpg" alt="Image of IIST" height="600" width="1520">
     
     <!--search-->
     <div class ="search-wrapper">
@@ -47,17 +47,6 @@
     </div>
 
 
-    <!--new changes
-    <div class="search-wrapper">
-        <label for="search">Search</label>
-        <input type="search" id="search">
-    </div>
-    <div class="user-cards">
-        <div class="card">
-            <div class="header">Serach Jobs</div>
-                <div class="body">Data Analyst</div>
-        </div>
-    </div>-->
 
     <!--filter box-->
     <div class = "filter-box">
@@ -97,67 +86,79 @@
         </div>
     </div>
 
-    <!--job search-->
-    <section class="job-list" id="jobs">
-        <div class="job-card">
-            <div class="job-name">
-                <img class = "job-profile" src="google1.avif">
-                <div class="job-detail">
-                    <h4>Google</h4>
-                    <h3>Software Developer Engineer</h3>
-                    <p>Design, develop, and optimize scalable software solutions for Google’s products and services.</p>
-                </div>
-            </div>
-            <div class="job-label">
-                <a class="label-a" href="#">Java</a>
-                <a class="label-b" href="#">C++</a>
-                <a class="label-c" href="#">SQL</a>
-            </div>
-            <div class="job-posted">
-                Posted 2 mins ago
-            </div>
-        </div>
 
-
-    <div class="job-card">
-        <div class="job-name">
-            <img class = "job-profile" src="facebook.avif">
-            <div class="job-detail">
-                <h4>Facebook</h4>
-                <h3>Data Analyst</h3>
-                <p>Analyze data, generate insights, and optimize decision-making for Facebook’s products and business strategies.</p>
-            </div>
-        </div>
-        <div class="job-label">
-            <a class="label-a" href="#">Python/R</a>
-            <a class="label-b" href="#">Problem-solving</a>
-            <a class="label-c" href="#">SQL</a>
-        </div>
-        <div class="job-posted">
-            Posted 40 mins ago
+<!-- jobs listing -->
+  <!-- Job 1: Google -->
+<div class="job-card" id="jobs" data-days="7" data-level="Entry" data-function="IT" data-employment="Full Time" data-location="Remote" data-education="Engineer" onclick="redirectToLogin()">
+    <div class="job-name">
+        <img class="job-profile" src="images/google1.avif">
+        <div class="job-detail">
+            <h4>Google</h4>
+            <h3>Software Developer Engineer</h3>
+            <p>Design, develop, and optimize scalable software solutions for Google’s products and services.</p>
         </div>
     </div>
+    <div class="job-label">
+        <a class="label-a" href="#">Java</a>
+        <a class="label-b" href="#">C++</a>
+        <a class="label-c" href="#">SQL</a>
+    </div>
+    <div class="job-posted">
+        <span id="last-updated-time-1"></span>
+    </div>
+    <div class="last-date">
+        <span id="last-date-1"></span>
+    </div>
+</div>
 
-    <div class="job-card">
-        <div class="job-name">
-            <img class = "job-profile" src="EBay-Logo.wine.svg">
-            <div class="job-detail">
-                <h4>eBay</h4>
-                <h3>Business Development</h3>
-                <p>Identify growth opportunities, build partnerships, and drive strategic initiatives to expand eBay’s market reach.</p>
-            </div>
-        </div>
-        <div class="job-label">
-            <a class="label-a" href="#">Analytical abilities</a>
-            <a class="label-b" href="#">Problem-solving</a>
-            <a class="label-c" href="#">SQL Begineer Level</a>
-        </div>
-        <div class="job-posted">
-            Posted 2 hours ago
+<!-- Job 2: Facebook -->
+<div class="job-card" data-days="13" data-level="Mid-Senior" data-function="Management" data-employment="Full Time" data-location="Hybrid" data-education="Management" onclick="redirectToLogin()">
+    <div class="job-name">
+        <img class="job-profile" src="images/facebook.avif">
+        <div class="job-detail">
+            <h4>Facebook</h4>
+            <h3>Data Analyst</h3>
+            <p>Analyze data, generate insights, and optimize decision-making for Facebook’s products and business strategies.</p>
         </div>
     </div>
-    <button class ="job-more">More List</button>
-</section>
+    <div class="job-label">
+        <a class="label-a" href="#">Python/R</a>
+        <a class="label-b" href="#">Problem-solving</a>
+        <a class="label-c" href="#">SQL</a>
+    </div>
+    <div class="job-posted">
+        <span id="last-updated-time-2"></span>
+    </div>
+    <div class="last-date">
+        <span id="last-date-2"></span>
+    </div>
+</div>
+
+<!-- Job 3: eBay -->
+<div class="job-card" data-days="5" data-level="Director" data-function="Education" data-employment="Part Time" data-location="Indore" data-education="Engineer" onclick="redirectToLogin()">
+    <div class="job-name">
+        <img class="job-profile" src="images/EBay-Logo.wine.svg">
+        <div class="job-detail">
+            <h4>eBay</h4>
+            <h3>Business Development</h3>
+            <p>Identify growth opportunities, build partnerships, and drive strategic initiatives to expand eBay’s market reach.</p>
+        </div>
+    </div>
+    <div class="job-label">
+        <a class="label-a" href="#">Analytical abilities</a>
+        <a class="label-b" href="#">Problem-solving</a>
+        <a class="label-c" href="#">SQL Beginner Level</a>
+    </div>
+    <div class="job-posted">
+        <span id="last-updated-time-3"></span>
+    </div>
+    <div class="last-date">
+        <span id="last-date-3"></span>
+    </div>
+</div>
+    
+<button class="job-more" onclick="redirectToLogin()">More List</button>
+    </section>
 
 
 <!--join-->
@@ -178,24 +179,26 @@
     <p>These are some of the companies that are featured on our campus. Following companies provided with 100+ offers to students of our institute.</p>
     <div class="featured-wrapper">
         <div class ="featured-card">
-            <img class="featured-image" src="facebook.avif">
+            <img class="featured-image" src="images/facebook.avif">
             <p>Facebook</p>
             <button class="featured-button">View 2 jobs</button>
         </div>
 
         <div class ="featured-card">
-            <img class="featured-image" src="facebook.avif">
+            <img class="featured-image" src="images/facebook.avif">
             <p>Facebook</p>
         <button class="featured-button">View 2 jobs</button>
         </div>
 
         <div class ="featured-card">
-            <img class="featured-image" src="facebook.avif">
+            <img class="featured-image" src="images/facebook.avif">
             <p>Facebook</p>
             <button class="featured-button">View 2 jobs</button>
         </div>
 </div>
 </section>
+
+
 <!--testimonial-->
 <section class="testimonials" id="testimonials">
     <h1 class="section-title">Testimonial</h1>
@@ -207,7 +210,7 @@
                 <i class="fas fa-quote-left"></i>
                 <h3>"What makes IIST special is its commitment to student growth and innovation. The diverse community and engaging coursework pushed me to think critically and creatively. Beyond academics, I found lifelong friendships and mentors who supported me every step of the way. Thanks to this institution, I stepped into the real world feeling prepared and inspired to make a difference." </h3>
                 <div class="testimonial-pic">
-                    <img src="testi1.jpg">
+                    <img src="images/testi1.jpg">
                     <p>Student 1</p>     <!--HAVE TO FIX THIS THE NAME ISNT SHOWING PLUS THE PHOTOS ARED IN CIRCLE INSTEAD OF BLOCKS-->
                     <span>Software Developer</span>
                 </div>
@@ -217,7 +220,7 @@
                 <i class="fas fa-quote-left"></i>
                 <h3>"My time at IIST was truly transformative. The professors were not only knowledgeable but also genuinely invested in my success. The hands-on learning experiences and supportive campus environment helped me develop both professionally and personally. I graduated feeling confident in my abilities, and I owe much of my career success to the strong foundation I built here."</h3>
                 <div class="testimonial-pic">
-                    <img src="testi4.jpg">
+                    <img src="images/testi4.jpg">
                     <p>Student 2</p>
                     <span>Software Developer</span>
                 </div>
@@ -227,7 +230,7 @@
                 <i class="fas fa-quote-left"></i>
                 <h3>"Attending IIMR was one of the best decisions I ever made. The curriculum was challenging yet rewarding, and the connections I made with peers and faculty have been invaluable. The university provided me with countless opportunities, from internships to networking events, which helped me secure a job even before graduation. I will always be grateful for my time here!"</h3>
                 <div class="testimonial-pic">
-                    <img src="testi3.jpg">
+                    <img src="images/testi3.jpg">
                     <p>Student 3</p>
                     <span>Business Developer</span>
                 </div>
@@ -237,7 +240,7 @@
                 <i class="fas fa-quote-left"></i>
                 <h3>"Attending IIMR was one of the best decisions I ever made. The curriculum was challenging yet rewarding, and the connections I made with peers and faculty have been invaluable. The university provided me with countless opportunities, from internships to networking events, which helped me secure a job even before graduation. I will always be grateful for my time here!"</h3>
                 <div class="testimonial-pic">
-                    <img src="testi3.jpg">
+                    <img src="images/testi3.jpg">
                     <p>Student 4</p>
                     <span>Business Developer</span>
                 </div>
@@ -247,7 +250,7 @@
                 <i class="fas fa-quote-left"></i>
                 <h3>"Attending IIMR was one of the best decisions I ever made. The curriculum was challenging yet rewarding, and the connections I made with peers and faculty have been invaluable. The university provided me with countless opportunities, from internships to networking events, which helped me secure a job even before graduation. I will always be grateful for my time here!"</h3>
                 <div class="testimonial-pic">
-                    <img src="testi3.jpg">
+                    <img src="images/testi3.jpg">
                     <p>Student 5</p>
                     <span>Business Developer</span>
                 </div>
@@ -257,7 +260,7 @@
                 <i class="fas fa-quote-left"></i>
                 <h3>"Attending IIMR was one of the best decisions I ever made. The curriculum was challenging yet rewarding, and the connections I made with peers and faculty have been invaluable. The university provided me with countless opportunities, from internships to networking events, which helped me secure a job even before graduation. I will always be grateful for my time here!"</h3>
                 <div class="testimonial-pic">
-                    <img src="testi3.jpg">
+                    <img src="images/testi3.jpg">
                     <p>Student 6</p>
                     <span>Business Developer</span>
                 </div>
@@ -267,7 +270,7 @@
                 <i class="fas fa-quote-left"></i>
                 <h3>"Attending IIMR was one of the best decisions I ever made. The curriculum was challenging yet rewarding, and the connections I made with peers and faculty have been invaluable. The university provided me with countless opportunities, from internships to networking events, which helped me secure a job even before graduation. I will always be grateful for my time here!"</h3>
                 <div class="testimonial-pic">
-                    <img src="testi3.jpg">
+                    <img src="images/testi3.jpg">
                     <p>Student 7</p>
                     <span>Business Developer</span>
                 </div>
@@ -285,7 +288,7 @@
     <p>Learn more company tips from company's recruiter </p>
     <div class="blog-wrapper">
         <div class="blog-card">
-            <img class="blog-image" src="blog1.webp">
+            <img class="blog-image" src="images/blog1.webp">
             <div class="blog-detail">
                 <span>11 April 2025</span>
                 <h4>How to enjoy your work</h4>
@@ -296,7 +299,7 @@
         </div>
 
         <div class="blog-card">
-            <img class="blog-image" src="blog2.avif">
+            <img class="blog-image" src="images/blog2.avif">
             <div class="blog-detail">
                 <span>15 April 2025</span>
                 <h4>10 Tips for techincal interview :</h4>
@@ -318,7 +321,7 @@
         </div>
 
         <div class="blog-card">
-            <img class="blog-image" src="blog3.jpeg">
+            <img class="blog-image" src="images/blog3.jpeg">
             <div class="blog-detail">
                 <span>30 April 2025</span>
                 <h4>How to manage time effectively</h4>
@@ -444,5 +447,139 @@
     document.querySelector(".search-button").addEventListener("click", searchFunction);
 </script>
 
+
+
+<!-- last updated function -->
+<script>
+    // Function to update the "Last updated on" text
+    function updateLastUpdatedTime() {
+        const now = new Date();
+        const formattedTime = now.toLocaleString(); // Format the time as per the user's locale
+
+        // Update the text inside the elements with IDs "last-updated-time", "last-updated-time-2", etc.
+        document.querySelectorAll('[id^="last-updated-time"]').forEach((element) => {
+            element.textContent = `Last updated on ${formattedTime}`;
+        });
+    }
+
+    // Call the function when the page loads
+    window.onload = updateLastUpdatedTime;
+
+    // Optional: Call the function whenever the "More List" button is clicked
+    document.querySelector('.job-more').addEventListener('click', function() {
+        // Simulate fetching new job listings (you can replace this with actual logic)
+        setTimeout(() => {
+            updateLastUpdatedTime();
+        }, 1000); // Simulate a 1-second delay for fetching new data
+    });
+</script>
+
+
+
+ <!-- JavaScript to update "Last updated on" and "Last Date to Apply" -->
+     <script>
+        // Function to calculate the last date to apply based on the number of days
+        function getLastDateToApply(days) {
+            const now = new Date();
+            const lastDate = new Date(now);
+            lastDate.setDate(now.getDate() + days); // Add the specified number of days
+
+            // Format the date as dd/mm/yyyy
+            const day = String(lastDate.getDate()).padStart(2, '0'); // Ensure 2 digits for day
+            const month = String(lastDate.getMonth() + 1).padStart(2, '0'); // Ensure 2 digits for month
+            const year = lastDate.getFullYear(); // Get full year
+
+            return `${day}/${month}/${year}`; // Return in dd/mm/yyyy format
+        }
+
+        // Function to update the "Last updated on" and "Last Date to Apply" text
+        function updateJobDetails() {
+            const now = new Date();
+            const formattedTime = now.toLocaleString(); // Format the time as per the user's locale
+
+            // Loop through each job card and update the last date to apply
+            document.querySelectorAll('.job-card').forEach((jobCard, index) => {
+                const days = parseInt(jobCard.getAttribute('data-days')); // Get the number of days from the data-days attribute
+                const lastDateToApply = getLastDateToApply(days); // Calculate the last date to apply
+
+                // Update the "Last updated on" and "Last Date to Apply" text
+                jobCard.querySelector(`#last-updated-time-${index + 1}`).textContent = `Last updated on ${formattedTime}`;
+                jobCard.querySelector(`#last-date-${index + 1}`).textContent = `Last Date to Apply: ${lastDateToApply}`;
+            });
+        }
+
+        // Call the function when the page loads
+        window.onload = updateJobDetails;
+
+        // Optional: Call the function whenever the "More List" button is clicked
+        document.querySelector('.job-more').addEventListener('click', function() {
+            // Simulate fetching new job listings (you can replace this with actual logic)
+            setTimeout(() => {
+                updateJobDetails();
+            }, 1000); // Simulate a 1-second delay for fetching new data
+        });
+    </script>
+
+
+
+
+<!--Function to redirect to the login page -->
+<script>
+    function redirectToLogin() {
+        window.location.href = "login.html"; // Replace with the path to your login page
+    }    
+</script>
+
+
+<!-- filetring part -->
+<script>
+    function filterJobs() {
+        const jobLevel = document.getElementById("job-level").value;
+        const jobFunction = document.getElementById("job-function").value;
+        const employment = document.getElementById("employment").value;
+        const location = document.getElementById("loaction").value;
+        const education = document.getElementById("education").value;
+
+
+        const jobCards = document.querySelectorAll(".job-card");
+
+        jobCards.forEach(jobCard => {
+            // job card data attributes lene ke liye
+            const level = jobCard.getAttribute("data-level");
+            const func = jobCard.getAttribute("data-function");
+            const emp = jobCard.getAttribute("data-employment");
+            const loc = jobCard.getAttribute("data-location");
+            const edu = jobCard.getAttribute("data-education");
+
+            // matching those job cards
+            const levelMatch = jobLevel === "Job Level" || level === jobLevel;
+            const funcMatch = jobFunction === "Job Function" || func === jobFunction;
+            const empMatch = employment === "Employment" || emp === employment;
+            const locMatch = location === "Locations" || loc === location;
+            const eduMatch = education === "Education" || edu === education;
+
+            // Show or hide the job card based on the filters
+            if (levelMatch && funcMatch && empMatch && locMatch && eduMatch) {
+                jobCard.style.display = "block"; 
+            } else {
+                jobCard.style.display = "none";
+            }
+        });
+    }
+
+    // Add event listeners to filter dropdowns
+    document.querySelectorAll(".filter-select").forEach(select => {
+        select.addEventListener("change", filterJobs);
+    });
+</script>
+
+
+<!-- taking more list to login page -->
+<script>
+    // Function to redirect to the login page
+    function redirectToLogin() {
+        window.location.href = "login.html"; // Replace with the path to your login page
+    }
+</script>
 </body>
 </html>
